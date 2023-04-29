@@ -1,0 +1,20 @@
+.hero {
+	min-height: 988px;
+	height: 1px;
+	padding: 50px 0;
+	background: url(../img/hero/bg.jpg);
+	&__container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	&__content {
+		max-width: 590px;
+	}
+
+	&__btns {
+		display: flex;
+		margin-top: 60px;
+		gap: 24px;
+	}
+}

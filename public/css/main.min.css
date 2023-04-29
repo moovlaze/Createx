@@ -1,0 +1,211 @@
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ubuntu-v20-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/ubuntu-v20-cyrillic_latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ubuntu-v20-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/ubuntu-v20-cyrillic_latin-700.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.page {
+  overflow-x: hidden;
+}
+.page_lock {
+  overflow-y: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #1e212c;
+}
+.main-title_home {
+  color: #fff;
+}
+.main-title_home span {
+  color: #ff5a30;
+}
+
+.main-descr {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #787a80;
+}
+.main-descr_home {
+  color: #fff;
+}
+
+.btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.btn_large {
+  padding: 15px 40px;
+}
+.btn_fill {
+  background-color: #ff5a30;
+}
+.btn_stroke {
+  border-color: #fff;
+}
+
+.header {
+  padding: 20px 0;
+}
+.header_main {
+  background-color: #fff;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__nav {
+  margin-left: 60px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 35px;
+  margin-left: auto;
+}
+
+.header-contacts-link {
+  padding-left: 52px;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+.header-contacts-link_tel {
+  background-image: url(../img/icons/iPhone.svg);
+}
+.header-contacts-link_mail {
+  background-image: url(../img/icons/Chat.svg);
+}
+.header-contacts-link__caption {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424551;
+}
+.header-contacts-link__value {
+  font-size: 18px;
+  line-height: 150%;
+  color: #1e212c;
+}
+
+.hero {
+  min-height: 988px;
+  height: 1px;
+  padding: 50px 0;
+  background: url(../img/hero/bg.jpg);
+}
+.hero__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero__content {
+  max-width: 590px;
+}
+.hero__btns {
+  display: flex;
+  margin-top: 60px;
+  gap: 24px;
+}
