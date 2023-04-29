@@ -1,0 +1,17 @@
+@font-face {
+	font-display: swap;
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/ubuntu-v20-cyrillic_latin-regular.woff2") format("woff2"),
+		url("../fonts/ubuntu-v20-cyrillic_latin-regular.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/ubuntu-v20-cyrillic_latin-700.woff2") format("woff2"),
+		url("../fonts/ubuntu-v20-cyrillic_latin-700.woff") format("woff");
+}
