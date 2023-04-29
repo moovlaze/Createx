@@ -69,6 +69,12 @@ li {
 	margin: 0 auto;
 }
 
+// Other Styles
+
+.section-offset {
+	padding-top: 120px;
+}
+
 .main-title {
 	font-weight: 700;
 	font-size: 72px;
@@ -91,6 +97,27 @@ li {
 	color: $color-storm;
 	&_home {
 		color: $color-white;
+	}
+}
+
+.title {
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 130%;
+	color: $color-gray-900;
+
+	&_center {
+		text-align: center;
+	}
+}
+
+.descr {
+	margin-top: 24px;
+	font-size: 18px;
+	line-height: 150%;
+	color: $color-storm;
+	&_center {
+		text-align: center;
 	}
 }
 
