@@ -1,2 +1,65 @@
 .header {
+	padding: 20px 0;
+	&_main {
+		background-color: #fff;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__nav {
+		margin-left: 60px;
+	}
+}
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+	}
+
+	&__link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 160%;
+		color: $color-gray-800;
+	}
+}
+.header-contacts {
+	display: flex;
+	gap: 35px;
+	margin-left: auto;
+}
+.header-contacts-link {
+	padding-left: 52px;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	&_tel {
+		background-image: url(../img/icons/iPhone.svg);
+	}
+
+	&_mail {
+		background-image: url(../img/icons/Chat.svg);
+	}
+
+	&__caption {
+		display: block;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 150%;
+		color: $color-gray-800;
+	}
+
+	&__value {
+		font-size: 18px;
+		line-height: 150%;
+		color: $color-gray-900;
+	}
 }
