@@ -1,0 +1,41 @@
+.mission-list {
+	$mission-list-offset: 94px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: calc($mission-list-offset * 2);
+	&__item {
+		position: relative;
+		text-align: center;
+
+		&:not(:last-child) {
+			&::after {
+				content: "";
+				position: absolute;
+				right: calc(-1 * $mission-list-offset);
+				top: 0;
+				width: 1px;
+				height: 100%;
+				background-image: url(../img/icons/divider.svg);
+			}
+		}
+	}
+
+	&__ico {
+		margin: 0 auto;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		margin-bottom: 8px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 150%;
+		color: $color-gray-900;
+	}
+
+	&__descr {
+		font-size: 16px;
+		line-height: 160%;
+		color: $color-storm;
+	}
+}

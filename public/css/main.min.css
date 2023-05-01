@@ -124,6 +124,7 @@ li {
 }
 
 .descr {
+  margin-bottom: 60px;
   margin-top: 24px;
   font-size: 18px;
   line-height: 150%;
@@ -147,6 +148,15 @@ li {
 }
 .btn_large {
   padding: 15px 40px;
+  font-size: 16px;
+}
+.btn_regular {
+  padding: 10px 32px;
+  font-size: 14px;
+}
+.btn_small {
+  padding: 5px 24px;
+  font-size: 12px;
 }
 .btn_fill {
   background-color: #ff5a30;
@@ -214,6 +224,62 @@ li {
   color: #1e212c;
 }
 
+.mission-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 188px;
+}
+.mission-list__item {
+  position: relative;
+  text-align: center;
+}
+.mission-list__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -94px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-image: url(../img/icons/divider.svg);
+}
+.mission-list__ico {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.mission-list__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.mission-list__descr {
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+}
+
+.form-field__caption {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424551;
+}
+.form-field__input {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+}
+.form-field__input::placeholder {
+  color: #9a9ca5;
+}
+
 .hero {
   min-height: 988px;
   height: 1px;
@@ -235,10 +301,7 @@ li {
 }
 
 .about-section {
-  padding-bottom: 20px;
-}
-.about-section__descr {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .video-block {
@@ -297,4 +360,41 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mission__list {
+  margin-bottom: 33px;
+}
+
+.know-form {
+  position: relative;
+  top: 92px;
+  padding: 48px 60px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+.know-form__title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.know-form__content {
+  display: flex;
+  align-items: flex-end;
+}
+.know-form__field {
+  width: 260px;
+  margin-right: 24px;
+}
+.know-form__field_big {
+  flex-grow: 1;
+}
+
+.services-section {
+  padding-top: 212px;
+  background: #fff url(../img/services-section/background.jpg) no-repeat center/cover;
 }

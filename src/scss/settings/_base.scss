@@ -112,6 +112,7 @@ li {
 }
 
 .descr {
+	margin-bottom: 60px;
 	margin-top: 24px;
 	font-size: 18px;
 	line-height: 150%;
@@ -135,6 +136,17 @@ li {
 
 	&_large {
 		padding: 15px 40px;
+		font-size: 16px;
+	}
+
+	&_regular {
+		padding: 10px 32px;
+		font-size: 14px;
+	}
+
+	&_small {
+		padding: 5px 24px;
+		font-size: 12px;
 	}
 
 	&_fill {
