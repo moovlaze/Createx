@@ -280,6 +280,19 @@ li {
   color: #9a9ca5;
 }
 
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 85px;
+}
+.learn-more__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+}
 .hero {
   min-height: 988px;
   height: 1px;
@@ -396,5 +409,71 @@ li {
 
 .services-section {
   padding-top: 212px;
+  padding-bottom: 80px;
   background: #fff url(../img/services-section/background.jpg) no-repeat center/cover;
+}
+.services-section__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.services-section-link {
+  position: relative;
+  display: block;
+  padding: 89px 10px;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+.services-section-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  border-radius: inherit;
+  background: url(../img/services-section/img.jpg) no-repeat center/cover;
+  transition: opacity 0.3s ease-out;
+}
+.services-section-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  opacity: 0;
+  border-radius: inherit;
+  background: rgba(30, 33, 44, 0.6);
+  transition: opacity 0.3s ease-out;
+}
+.services-section-link__content {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services-section-link__icon {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  margin-bottom: 24px;
+  fill: #ff5a30;
+  transition: fill 0.3s ease-out;
+}
+.services-section-link__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  transition: color 0.3s ease-out;
+}
+.services-section-link:hover::before, .services-section-link:hover::after {
+  opacity: 1;
+}
+.services-section-link:hover .services-section-link__icon,
+.services-section-link:hover .services-section-link__title {
+  fill: #fff;
+  color: #fff;
 }
