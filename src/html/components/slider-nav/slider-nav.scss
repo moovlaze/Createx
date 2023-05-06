@@ -1,5 +1,8 @@
 .slider-nav {
+	position: relative;
+	z-index: 20px;
 	display: flex;
+
 	&__btn {
 		@include flex-all-center;
 		width: 48px;
