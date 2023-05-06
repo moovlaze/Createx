@@ -1,0 +1,28 @@
+.slider-nav {
+	display: flex;
+	&__btn {
+		@include flex-all-center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: transparent;
+		color: #424551;
+		transition: color 0.2s ease-out, background-color 0.2s ease-out;
+		cursor: pointer;
+
+		svg {
+			color: inherit;
+			fill: currentColor;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+			color: $color-white;
+		}
+
+		&.swiper-button-disabled {
+			opacity: 0.4;
+			pointer-events: none;
+		}
+	}
+}

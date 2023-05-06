@@ -155,5 +155,10 @@ li {
 
 	&_stroke {
 		border-color: $color-white;
+
+		&-primary {
+			color: $color-primary;
+			border-color: currentColor;
+		}
 	}
 }

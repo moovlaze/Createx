@@ -1,0 +1,21 @@
+.portfolio-section {
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		max-width: 705px;
+	}
+
+	&__slider {
+		padding: 25px 25px;
+		margin: 0 -25px;
+	}
+
+	&__learn-more {
+		margin-top: 55px;
+	}
+}
