@@ -621,6 +621,7 @@ li {
 
 .testimonials {
   padding-top: 80px;
+  margin-bottom: -60px;
   background-color: #f4f5f7;
 }
 .testimonials__container {
@@ -853,4 +854,71 @@ li {
 .services-section-link:hover .services-section-link__title {
   fill: #fff;
   color: #fff;
+}
+
+.facts {
+  position: relative;
+  overflow: hidden;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: #fff;
+}
+.facts::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -190px;
+  width: 570px;
+  height: 1065px;
+  background: url(../img/facts/bg.png) no-repeat center/cover;
+}
+.facts__title {
+  margin-bottom: 60px;
+}
+.facts__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.cercle-progress__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 148px;
+  height: 148px;
+}
+.cercle-progress__circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.cercle-progress__circle_clients::before {
+  background: url(../img/facts/01.svg) no-repeat center/cover;
+}
+.cercle-progress__circle_years::before {
+  background: url(../img/facts/02.svg) no-repeat center/cover;
+}
+.cercle-progress__circle_hours::before {
+  background: url(../img/facts/03.svg) no-repeat center/cover;
+}
+.cercle-progress__circle_succeeded::before {
+  background: url(../img/facts/04.svg) no-repeat center/cover;
+}
+.cercle-progress__value {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.cercle-progress__descr {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1e212c;
 }
