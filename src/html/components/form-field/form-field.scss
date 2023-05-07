@@ -20,5 +20,9 @@
 		&::placeholder {
 			color: #9a9ca5;
 		}
+
+		&_grey {
+			background-color: $color-grey-bg;
+		}
 	}
 }

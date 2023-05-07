@@ -509,6 +509,9 @@ li {
 .form-field__input::placeholder {
   color: #9a9ca5;
 }
+.form-field__input_grey {
+  background-color: #f4f5f7;
+}
 
 .learn-more {
   display: flex;
@@ -670,6 +673,93 @@ li {
 .testimonials__poc {
   color: #787a80;
 }
+.contacts-section {
+  padding: 80px 0;
+  background-color: #fff;
+  background: url(../img/contacts/bg.jpg) no-repeat center/cover;
+}
+.contacts-section__container {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacts-section__content {
+  max-width: 495px;
+  padding: 48px 40px;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+.contacts-section__title {
+  margin-bottom: 24px;
+  font-size: 28px;
+  line-height: 150%;
+}
+.contacts-section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-contacts-section__textarea {
+  width: 100%;
+  height: 66px;
+  padding: 11px 16px;
+  resize: none;
+}
+.form-contacts-section__btn {
+  align-self: center;
+}
+
+.custom-chekbox {
+  display: flex;
+}
+.custom-chekbox__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+}
+.custom-chekbox__box {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: sub;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  border: 1px solid #ff5a30;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: background-color 0.2s ease-out;
+}
+.custom-chekbox__box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 8px;
+  background: url("../../../img/icons/checkbox-arrow.svg") no-repeat center/contain;
+  transition: transform 0.2s ease-out;
+}
+.custom-chekbox__input:focus + .custom-chekbox__box {
+  box-shadow: 0px 0px 8px 4px rgba(186, 96, 56, 0.2);
+}
+.custom-chekbox__input:checked + .custom-chekbox__box {
+  background-color: #ff5a30;
+}
+.custom-chekbox__input:checked + .custom-chekbox__box::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.custom-chekbox__text {
+  font-size: 14px;
+  line-height: 150%;
+  color: #424551;
+}
+
 .hero {
   min-height: 988px;
   height: 1px;
@@ -923,6 +1013,9 @@ li {
   color: #1e212c;
 }
 
+.recent-news {
+  padding-bottom: 120px;
+}
 .recent-news__title {
   margin-bottom: 60px;
 }
