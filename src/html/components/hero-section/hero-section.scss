@@ -1,0 +1,51 @@
+.hero-section {
+	display: flex;
+	align-items: center;
+	min-height: 600px;
+	padding: 30px 0;
+	background-color: $color-grey-bg;
+	background: url(../img/services-page/bg.png) no-repeat top right / contain;
+	&__container {
+		width: 100%;
+	}
+
+	&__body {
+		max-width: 600px;
+	}
+
+	&__breadcrumbs {
+		margin-bottom: 40px;
+	}
+}
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	&__link {
+		position: relative;
+		font-size: 14px;
+		line-height: 150%;
+		&:not([href]) {
+			color: $color-manatee;
+		}
+
+		&:not(:last-child) {
+			padding-right: 22px;
+
+			&::before {
+				content: "/";
+				position: absolute;
+				right: 8px;
+				top: 0;
+				font-size: 12px;
+				color: $color-manatee;
+			}
+		}
+	}
+
+	&__current {
+	}
+}
+.main-title {
+}
+.main-descr {
+}

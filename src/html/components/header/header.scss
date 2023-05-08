@@ -3,6 +3,16 @@
 	&_main {
 		background-color: #fff;
 	}
+
+	&_secondary {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		width: 100%;
+		background-color: transparent;
+	}
+
 	&__container {
 		display: flex;
 		align-items: center;
