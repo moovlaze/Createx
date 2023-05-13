@@ -39,6 +39,10 @@
 		font-size: 16px;
 		line-height: 160%;
 		color: $color-gray-800;
+
+		&_current {
+			color: $color-primary;
+		}
 	}
 }
 .header-contacts {

@@ -11,6 +11,10 @@
 			contain;
 	}
 
+	&_works {
+		background: url(../img/works-page/bg.png) no-repeat top right -100px / contain;
+	}
+
 	&__container {
 		width: 100%;
 	}

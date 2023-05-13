@@ -445,6 +445,9 @@ li {
   line-height: 160%;
   color: #424551;
 }
+.nav__link_current {
+  color: #ff5a30;
+}
 
 .header-contacts {
   display: flex;
@@ -805,6 +808,9 @@ li {
 }
 .hero-section_services-inner {
   background: url(../img/inner-service-page/bg.png) no-repeat top right -100px/contain;
+}
+.hero-section_works {
+  background: url(../img/works-page/bg.png) no-repeat top right -100px/contain;
 }
 .hero-section__container {
   width: 100%;
