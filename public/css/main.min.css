@@ -788,6 +788,9 @@ li {
   background-color: #f4f5f7;
   background: url(../img/services-page/bg.png) no-repeat top right/contain;
 }
+.hero-section_services-inner {
+  background: url(../img/inner-service-page/bg.png) no-repeat top right -100px/contain;
+}
 .hero-section__container {
   width: 100%;
 }
