@@ -1415,3 +1415,50 @@ li {
   overflow: visible;
   padding-top: 12px;
 }
+
+.how-we-do {
+  margin-top: 180px;
+}
+.how-we-do__title {
+  margin-bottom: 60px;
+}
+.how-we-do__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+  counter-reset: section;
+}
+.how-we-do__item {
+  position: relative;
+  grid-column: 3 span;
+}
+.how-we-do__item::before {
+  content: "0" counter(section);
+  counter-increment: section;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: #d7dadd;
+}
+.how-we-do__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 70%;
+  height: 1px;
+  background: url(../img/icons/how-we-do-line.svg) no-repeat center/contain;
+}
+.how-we-do__title-item {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.how-we-do__descr-item {
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+}
