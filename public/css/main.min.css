@@ -325,6 +325,9 @@ li {
 .section-offset {
   padding-top: 120px;
 }
+.section-offset_big {
+  padding-top: 180px;
+}
 
 .main-title {
   font-weight: 700;
@@ -553,6 +556,13 @@ li {
   box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
   background-color: #fff;
+}
+.portfolio-item__pic {
+  height: 345px;
+}
+.portfolio-item__pic img {
+  height: 100%;
+  object-fit: cover;
 }
 .portfolio-item__info {
   display: flex;
