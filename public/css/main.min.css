@@ -1462,3 +1462,24 @@ li {
   line-height: 160%;
   color: #787a80;
 }
+
+.our-benefits {
+  padding-top: 80px;
+  padding-bottom: 126px;
+  margin-top: 120px;
+  background-color: #1e212c;
+}
+.our-benefits__title {
+  color: #fff;
+}
+.our-benefits__list .mission-list__title {
+  color: #fff;
+}
+.our-benefits__btn {
+  position: relative;
+  top: 150px;
+  display: block;
+  max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+}
