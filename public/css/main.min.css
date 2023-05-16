@@ -711,6 +711,11 @@ li {
 .testimonials__poc {
   color: #787a80;
 }
+.testimonials__bg {
+  position: relative;
+  z-index: 2;
+}
+
 .contacts-section {
   padding: 80px 0;
   background-color: #fff;
@@ -811,6 +816,7 @@ li {
 }
 .hero-section_works {
   background: url(../img/works-page/bg.png) no-repeat top right -100px/contain;
+  background-color: #f4f5f7;
 }
 .hero-section__container {
   width: 100%;
@@ -1580,4 +1586,87 @@ li {
   font-size: 16px;
   line-height: 160%;
   color: #424551;
+}
+
+.portfolio {
+  padding-bottom: 100px;
+}
+.portfolio__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  margin-top: 62px;
+}
+.portfolio__item {
+  grid-column: 4 span;
+  display: none;
+}
+.portfolio__item.visible {
+  display: block;
+}
+.portfolio__load-more {
+  margin-top: 60px;
+}
+
+.portfolio-tabs {
+  transform: translateY(-50px);
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-tabs-item {
+  flex: 0 0 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 10px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.portfolio-tabs-item__ico {
+  fill: #ff5a30;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.portfolio-tabs-item__desc {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9a9ca5;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.portfolio-tabs-item.active {
+  background-color: #ff5a30;
+  pointer-events: none;
+}
+.portfolio-tabs-item.active .portfolio-tabs-item__ico {
+  fill: #fff;
+}
+.portfolio-tabs-item.active .portfolio-tabs-item__desc {
+  color: #fff;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.load-more__ico {
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+}
+.load-more__descr {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  cursor: pointer;
 }

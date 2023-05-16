@@ -59,5 +59,7 @@
 	}
 
 	&__bg {
+		position: relative;
+		z-index: 2;
 	}
 }
