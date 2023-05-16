@@ -647,6 +647,10 @@ li {
   padding-bottom: 80px;
   margin: 0;
 }
+.partners_works {
+  margin-top: 180px;
+  background-color: #fff;
+}
 .partners__title {
   margin-bottom: 60px;
 }
