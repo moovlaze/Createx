@@ -822,14 +822,27 @@ li {
   background: url(../img/works-page/bg.png) no-repeat top right -100px/contain;
   background-color: #f4f5f7;
 }
+.hero-section_work-inner {
+  background: url(../img/work-inner-page/hero-bg.png) no-repeat top right/contain;
+  background-color: #fff;
+}
 .hero-section__container {
   width: 100%;
 }
 .hero-section__body {
   max-width: 600px;
 }
+.hero-section__body_work-inner {
+  max-width: 100%;
+}
 .hero-section__breadcrumbs {
   margin-bottom: 40px;
+}
+.hero-section__title_work-inner {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 1px;
 }
 
 .breadcrumbs {
