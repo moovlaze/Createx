@@ -1,4 +1,4 @@
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Pagination, Thumbs } from "swiper";
 
 const bodyStyles = window.getComputedStyle(document.body);
 const gap = parseInt(bodyStyles.getPropertyValue("--grid-gap"));
@@ -24,5 +24,30 @@ export const sliderTwo = () => {
 			nextEl: ".testimonials_next",
 		},
 		modules: [Navigation],
+	});
+};
+
+export const worksSlider = () => {
+	const worksSliderWrap = document.querySelector(".works-slider");
+
+	if (!worksSliderWrap) return;
+
+	const swiper = new Swiper(".works-slider-nav", {
+		spaceBetween: 20,
+		slidesPerView: 10,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+
+	const swiper2 = new Swiper(".works-slider-big", {
+		spaceBetween: 20,
+		modules: [Navigation, Thumbs],
+		navigation: {
+			nextEl: ".works-slider-big__next",
+			prevEl: ".works-slider-big__prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
 	});
 };
